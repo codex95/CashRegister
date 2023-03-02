@@ -13,7 +13,7 @@ function checkCashRegister(price, cash, cid) {
   else if (change === cidTotal) {
     return { status: "CLOSED", change: cid };
   }
-  // To check condition to check if cid > change & can pay exact amount || cid > change & dont have proper amount of each type of moneys
+  // To check condition if cid > change & can pay exact amount || cid > change & dont have proper amount of each type of moneys
   else {
     let answer = []; // Create an empty placeholder array
     cid = cid.reverse(); // Reverse array from highest to lowest
